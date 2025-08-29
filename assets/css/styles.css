@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 3rem;
+  font-family: Arial, sans-serif;
+  background: #fff0a4;
+  color: #533507;
+  text-align: center;
+  overflow-x: hidden;
+  padding-bottom: 3rem;
+}
+
+/* Heading Animation */
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  opacity: 0;
+  text-wrap: wrap;
+  font-family: "Lucida Handwriting", cursive;
+  animation: fadeIn 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+p {
+  padding: 0 20px;
+  font-size: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+/* Link Styling */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #2e1c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+  animation-delay: 0.7s;
+}
+
+a:hover {
+  /* background: #ff3399; */
+  border-radius: 25px;
+  transform: scale(1.1);
+}
+
+/* Fade In Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fireworks Effect */
+.firework {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  animation: explode 0.1s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

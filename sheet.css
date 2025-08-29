@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #1bd61b;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Heading Animation */
+h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+/* Link Styling */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff0066;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 6s;
+}
+
+a:hover {
+  background: #ff3399;
+  transform: scale(1.1);
+}
+
+/* Fade In Keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Fireworks Effect */
+.firework {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(3); opacity: 0; }
+}
